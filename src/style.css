@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Copperplate";
+  src: format(ttf) url(./Copperplate.ttf),
+    format(ttf) url(./CopperplateBold.ttf);
+}
+
+.top-img {
+  src: url(./eiffel-tower-view.jpg);
+  height: 100%;
+  width: 100%;
+}
