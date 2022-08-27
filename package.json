@@ -1,0 +1,11 @@
+{
+  "name": "restaurantpage-js",
+  "version": "1.0.0",
+  "description": "Restaurant Page project built using HTML,CSS,JS, Webpack, npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arjun Singh",
+  "license": "ISC"
+}
