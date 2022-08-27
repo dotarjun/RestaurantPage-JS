@@ -1,10 +1,14 @@
 import './style.css';
 
-let content = document.querySelector('#content');
+let content = document.createElement('div')
+content.setAttribute('id', 'content')
+
 
 let topImg = document.createElement('img');
 topImg.classList.add('top-img');
-content.appendChild(topImg)
-
-
-document.body.appendChild(content)
+content.appendChild(topImg);
+let heading = document.createElement('h1');
+heading.classList.add('heading')
+heading.textContent = 'BRUHHHH'
+content.appendChild(heading)
+document.body.appendChild(content);
