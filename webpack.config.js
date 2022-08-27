@@ -31,7 +31,7 @@ module.exports = {
             {
                 test: /\.(woff|woff2|odt|ttf|eot|otf)/i,
                 type: 'asset/resource'
-            }
+            },
         ],
     },
     output: {

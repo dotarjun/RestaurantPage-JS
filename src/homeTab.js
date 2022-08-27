@@ -8,8 +8,8 @@ function appendImg(msg) {
     topImg.classList.add('top-img');
     content.appendChild(topImg);
 
-    const scroll = document.createElement('div')
-    scroll.classList.add('icon-scroll')
+    const scroll = document.createElement('img');
+    scroll.classList.add('scroll')
     content.appendChild(scroll)
 }
 
