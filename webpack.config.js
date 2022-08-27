@@ -3,14 +3,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'production',
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        homeTab: './src/homeTab.js',
+        paragraph: './src/paragraph.js',
+    },
     devtool: 'inline-source-map',
     devServer: {
         static: './dist',
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: '',
+            title: 'Ratatouille',
             favicon: './src/favicon.ico'
         }),
     ],
@@ -25,14 +29,17 @@ module.exports = {
                 type: 'asset/resource'
             },
             {
-                test: /\.(woff|woff2|odt|ttf|eot)/i,
+                test: /\.(woff|woff2|odt|ttf|eot|otf)/i,
                 type: 'asset/resource'
             }
         ],
     },
     output: {
-        filename: 'main.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+    },
+    optimization: {
+        runtimeChunk: 'single',
     },
 };
