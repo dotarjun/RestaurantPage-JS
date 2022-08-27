@@ -1,14 +1,35 @@
-const topTextDiv = document.createElement('div');
-topTextDiv.classList.add('home-content');
+const homeContent = document.createElement('div');
+homeContent.classList.add('home-content');
 
-function topText(text) {
+function homeText(text) {
     const para = document.createElement('p');
     para.textContent = text;
-    topTextDiv.appendChild(para)
+    homeContent.appendChild(para)
 }
 
-topText('We are ratatouille restaurant based in Paris, France. We were established in 1907 by Chef Linguini ( I guess ). We serve the most hygeienic food in Paris ( or do we ). That\'s all I can think of to write. This is basically some text to fill up the space. This sentence is no different. Neither this one. HAHA gotcha. Ok bye')
-content.appendChild(topTextDiv)
+function highlightText(text) {
+    const highlightLine = document.createElement('p')
+    highlightLine.classList.add('highlight-line');
+    highlightLine.textContent = text;
+    homeContent.appendChild(highlightLine)
+}
+
+function bookButton() {
+    const btn = document.createElement('button');
+    btn.classList.add('book-btn');
+    btn.textContent = 'Book a Table'
+    homeContent.appendChild(btn)
+}
+
+homeText('Remy (our lead chef) dreamt of becoming a great chef, despite being a rat in a rodent-phobic profession. Life led him to Paris to follow his dream, and with the help of hapless garbage boy Linguini he put his culinary skills to the test in the kitchen but he has to stay in hiding at the same time, with hilarious consequences. Remy eventually got the chance to prove his culinary abilities to THE Anton Ego, the great food critic. With a surprisingly positive review, we (formerly known as Gusteau\'s) were able to rise back to our old fame and rewrite history in French Cuisine.')
+highlightText('But soon that would change')
+homeText('Following Ego\'s review, we were ~ratted~ out.Thus Gustaeu\'s was shut down due to undisclosable reasons. But fear not, Gustaeu\'s still lives on. At Ratatouille we uphold Gustaeu\'s motto ')
+highlightText('"Anybody can Cook"')
+homeText('So what are you waiting for? Book a table at Ratatouille by clicking the button below.')
+bookButton()
+
+
+content.appendChild(homeContent)
 
 
 

@@ -42,5 +42,10 @@ body {
 
 .home-content {
   font-family: sans-serif;
-  margin-inline: 25vw;
+  margin-inline: 20vw;
+}
+
+.highlight-line {
+  font-family: "StruckBase";
+  font-size: 1.5rem;
 }
