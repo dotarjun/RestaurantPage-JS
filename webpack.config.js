@@ -7,7 +7,6 @@ module.exports = {
         index: './src/index.js',
         homeTab: './src/homeTab.js',
         paragraph: './src/paragraph.js',
-        disclaimer: './src/disclaimer.js',
     },
     devtool: 'inline-source-map',
     devServer: {
