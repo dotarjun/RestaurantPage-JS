@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path');   
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -7,6 +7,7 @@ module.exports = {
         index: './src/index.js',
         homeTab: './src/homeTab.js',
         paragraph: './src/paragraph.js',
+        disclaimer: './src/disclaimer.js',
     },
     devtool: 'inline-source-map',
     devServer: {

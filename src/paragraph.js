@@ -21,7 +21,6 @@ function bookButton() {
     homeContent.appendChild(btn)
 }
 
-
 function addDisclaimer(parent) {
     const disc = document.createElement('p')
     disc.classList.add('disclaimer')
@@ -36,4 +35,8 @@ highlightText('"Anybody can Cook"')
 homeText('So what are you waiting for? Book a table at Ratatouille by clicking the button below.')
 bookButton()
 addDisclaimer(homeContent)
+
 content.appendChild(homeContent)
+
+
+
