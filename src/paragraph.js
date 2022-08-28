@@ -22,12 +22,14 @@ function bookButton() {
 }
 
 homeText('Remy (our lead chef) dreamt of becoming a great chef, despite being a rat in a rodent-phobic profession. Life led him to Paris to follow his dream, and with the help of hapless garbage boy Linguini he put his culinary skills to the test in the kitchen but he has to stay in hiding at the same time, with hilarious consequences. Remy eventually got the chance to prove his culinary abilities to THE Anton Ego, the great food critic. With a surprisingly positive review, we (formerly known as Gusteau\'s) were able to rise back to our old fame and rewrite history in French Cuisine.')
-highlightText('But soon that would change')
+homeText('But soon that would change')
 homeText('Following Ego\'s review, we were ~ratted~ out.Thus Gustaeu\'s was shut down due to undisclosable reasons. But fear not, Gustaeu\'s still lives on. At Ratatouille we uphold Gustaeu\'s motto ')
 highlightText('"Anybody can Cook"')
 homeText('So what are you waiting for? Book a table at Ratatouille by clicking the button below.')
 bookButton()
-
+// addDisclaimer(homeContent)
+// const disc = addDisclaimer()
+// homeContent.appendChild(disc)
 
 content.appendChild(homeContent)
 
