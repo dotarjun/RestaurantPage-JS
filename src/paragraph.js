@@ -27,9 +27,9 @@ homeText('Following Ego\'s review, we were ~ratted~ out.Thus Gustaeu\'s was shut
 highlightText('"Anybody can Cook"')
 homeText('So what are you waiting for? Book a table at Ratatouille by clicking the button below.')
 bookButton()
-// addDisclaimer(homeContent)
-// const disc = addDisclaimer()
-// homeContent.appendChild(disc)
+ addDisclaimer(homeContent)
+ const disc = addDisclaimer()
+ homeContent.appendChild(disc)
 
 content.appendChild(homeContent)
 
