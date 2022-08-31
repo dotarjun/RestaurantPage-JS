@@ -1,4 +1,4 @@
-import './palette.css'
+// import './palette.css'
 import './style.css';
 
 let content = document.createElement('div')
