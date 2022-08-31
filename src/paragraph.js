@@ -1,3 +1,5 @@
+import bookButton from "./button.js";
+
 const homeContent = document.createElement('div');
 homeContent.classList.add('home-content');
 
@@ -33,10 +35,6 @@ homeText('But soon that would change')
 homeText('Following Ego\'s review, we were ~ratted~ out.Thus Gustaeu\'s was shut down due to undisclosable reasons. But fear not, Gustaeu\'s still lives on. At Ratatouille we uphold Gustaeu\'s motto ')
 highlightText('"Anybody can Cook"')
 homeText('So what are you waiting for? Book a table at Ratatouille by clicking the button below.')
-bookButton()
-addDisclaimer(homeContent)
-
+bookButton(homeContent)
+// addDisclaimer(homeContent)
 content.appendChild(homeContent)
-
-
-
