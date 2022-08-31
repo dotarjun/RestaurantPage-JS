@@ -1,5 +1,3 @@
-const { ContextReplacementPlugin } = require("webpack")
-
 const navbar = document.createElement('nav')
 const navLinks = document.createElement('ul')
 
@@ -9,7 +7,7 @@ function createNavLink(txt, lnk) {
     link.textContent = txt
     link.setAttribute('href', `${lnk}`)
     li.appendChild(link)
-    navLinks.appendChild('li')
+    navLinks.appendChild(li)
 }
 
 createNavLink('Menu', 'menu')
