@@ -1,6 +1,6 @@
 :root {
   /* CSS HEX */
-  --bistre: #352307ff;
+  --bistre: rgba(53, 35, 7, 0.63);
   --raw-sienna: #d98851ff;
   --baby-blue-eyes: #9dbcffff;
   --wild-blue-yonder: #95add6ff;
@@ -72,7 +72,14 @@ body {
 
 .highlight-line {
   font-family: "StruckBase";
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 1rem;
+  margin-inline: auto;
+  width: 60%;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-block: 0;
 }
 
 nav {
