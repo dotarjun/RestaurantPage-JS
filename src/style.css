@@ -1,3 +1,15 @@
+:root {
+  /* CSS HEX */
+  --bistre: #352307ff;
+  --raw-sienna: #d98851ff;
+  --baby-blue-eyes: #9dbcffff;
+  --wild-blue-yonder: #95add6ff;
+  --cadet-grey: #8c9eadff;
+  --light-cadet-grey: #c8dff3;
+  --gunmetal: #152531ff;
+  --gold: #ffb76d;
+}
+
 @font-face {
   font-family: "BlackChancery";
   src: url(./blackchancery.ttf);
@@ -8,6 +20,7 @@
 body {
   font-family: "StruckBase";
   margin: 0;
+  /* background-color: var(--light-cadet-grey); */
 }
 
 #content {
@@ -24,7 +37,9 @@ body {
   /* margin-inline: 2.5vw; */
   position: relative;
   z-index: -5;
+  border: 0.2rem solid var(--gunmetal);
   border-radius: 2rem;
+  object-fit: cover;
 }
 
 .img-text {
@@ -76,11 +91,32 @@ nav ul {
   align-items: center;
   list-style: none;
   height: 8vh;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "blackchancery";
   color: black;
   font-weight: 600;
+}
+
+.book-btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+
+  padding-inline: 1rem;
+  padding-block: 0.25rem;
+  background-color: var(--gold);
+  /* color: white; */
+  border-radius: 0.25rem;
+  /* border: 0.2rem solid var(--gunmetal); */
+  cursor: pointer;
+  font-family: "blackchancery";
+  box-shadow: var(--gunmetal) 0px 1px 4px;
 }
