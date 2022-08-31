@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: {
         index: './src/index.js',
         homeTab: './src/homeTab.js',
@@ -10,7 +10,7 @@ module.exports = {
         navbar: './src/navbar.js',
         paragraph: './src/paragraph.js',
     },
-    devtool: 'inline-source-map',
+    // devtool: 'inline-source-map',
     devServer: {
         static: './dist',
     },
