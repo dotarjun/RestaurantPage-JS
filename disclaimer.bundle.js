@@ -1,1 +1,0 @@
-(self.webpackChunkrestaurantpage_js=self.webpackChunkrestaurantpage_js||[]).push([[480],{374:()=>{}},a=>{a(a.s=374)}]);
