@@ -5,6 +5,7 @@ module.exports = {
     mode: 'production',
     entry: {
         index: './src/index.js',
+        navbar: './src/navbar.js',
         homeTab: './src/homeTab.js',
         paragraph: './src/paragraph.js',
     },
