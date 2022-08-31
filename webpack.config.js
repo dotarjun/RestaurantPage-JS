@@ -8,6 +8,7 @@ module.exports = {
         navbar: './src/navbar.js',
         homeTab: './src/homeTab.js',
         paragraph: './src/paragraph.js',
+        button: './src/button.js',
     },
     devtool: 'inline-source-map',
     devServer: {
