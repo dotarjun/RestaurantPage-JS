@@ -16,13 +16,6 @@ function highlightText(text) {
     homeContent.appendChild(highlightLine)
 }
 
-function bookButton() {
-    const btn = document.createElement('button');
-    btn.classList.add('book-btn');
-    btn.textContent = 'Book a Table'
-    homeContent.appendChild(btn)
-}
-
 function addDisclaimer(parent) {
     const disc = document.createElement('p')
     disc.classList.add('disclaimer')
