@@ -1,7 +1,6 @@
 import bookButton from "./button.js";
 
-const homeContent = document.createElement('div');
-homeContent.classList.add('home-content');
+const homeContent = document.createElement('main');
 
 function homeText(text) {
     const para = document.createElement('p');
