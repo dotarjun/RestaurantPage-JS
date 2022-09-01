@@ -1,13 +1,26 @@
+:root {
+  /* CSS HEX */
+  --bistre: rgba(53, 35, 7, 0.63);
+  --raw-sienna: #d98851ff;
+  --baby-blue-eyes: #9dbcffff;
+  --wild-blue-yonder: #95add6ff;
+  --cadet-grey: #8c9eadff;
+  --light-cadet-grey: #c8dff3;
+  --gunmetal: #152531ff;
+  --gold: #ffb76d;
+}
+
 @font-face {
   font-family: "BlackChancery";
-  src: url(./blackchancery.ttf);
+  src: url(./assets/fonts/blackchancery.ttf);
   font-family: "StruckBase";
-  src: url(./StruckBase.otf);
+  src: url(./assets/fonts/StruckBase.otf);
 }
 
 body {
   font-family: "StruckBase";
   margin: 0;
+  /* background-color: var(--light-cadet-grey); */
 }
 
 #content {
@@ -15,7 +28,7 @@ body {
 }
 
 .top-img {
-  content: url(./eiffel-tower-view.jpg);
+  content: url(./assets/images/eiffel-tower-view.jpg);
   height: 90vh;
   width: 95vw;
   /* margin-block: 5vh; */
@@ -24,7 +37,9 @@ body {
   /* margin-inline: 2.5vw; */
   position: relative;
   z-index: -5;
+  border: 0.2rem solid var(--gunmetal);
   border-radius: 2rem;
+  object-fit: cover;
 }
 
 .img-text {
@@ -39,17 +54,6 @@ body {
   margin: 0;
 }
 
-.scroll {
-  content: url(./scroll.svg);
-  position: absolute;
-  z-index: 2;
-  width: 30px;
-  left: 50%;
-  bottom: 3%;
-  transform: translate(-50%, -50%);
-  display: none;
-}
-
 .home-content {
   font-family: sans-serif;
   margin-inline: 20vw;
@@ -57,7 +61,14 @@ body {
 
 .highlight-line {
   font-family: "StruckBase";
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 1rem;
+  margin-inline: auto;
+  width: 60%;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-block: 0;
 }
 
 nav {
@@ -76,11 +87,68 @@ nav ul {
   align-items: center;
   list-style: none;
   height: 8vh;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "blackchancery";
   color: black;
   font-weight: 600;
+}
+
+.book-btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+
+  padding-inline: 1rem;
+  padding-block: 0.25rem;
+  background-color: var(--gold);
+  /* color: white; */
+  border-radius: 0.25rem;
+  border: 0.15rem solid var(--gunmetal);
+  cursor: pointer;
+  font-family: "blackchancery";
+  box-shadow: var(--gunmetal) 0px 1px 1px;
+}
+
+.home-content button {
+  position: relative;
+  left: 50%;
+  margin-top: 2rem;
+  padding: 2rem;
+  padding-block: 1rem;
+  transform: translateX(-50%);
+}
+
+footer {
+  height: 20vh;
+  background-color: var(--gunmetal);
+  margin-top: 5rem;
+}
+
+footer .socials {
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 100%;
+}
+footer .socials img {
+  width: 4rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+footer .socials #Github {
+  content: url(./assets/images/github.png);
+}
+
+footer .socials #Twitter {
+  content: url(./assets/images/twitter.png);
 }

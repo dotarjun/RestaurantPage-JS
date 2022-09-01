@@ -2,22 +2,22 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: {
         index: './src/index.js',
-        navbar: './src/navbar.js',
         homeTab: './src/homeTab.js',
-        paragraph: './src/paragraph.js',
         button: './src/button.js',
+        navbar: './src/navbar.js',
+        paragraph: './src/paragraph.js',
     },
-    devtool: 'inline-source-map',
+    // devtool: 'inline-source-map',
     devServer: {
         static: './dist',
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Ratatouille',
-            favicon: './src/favicon.ico'
+            favicon: './src/assets/images/favicon.ico'
         }),
     ],
     module: {
