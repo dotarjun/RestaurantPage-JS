@@ -131,3 +131,24 @@ footer {
   background-color: var(--gunmetal);
   margin-top: 5rem;
 }
+
+footer .socials {
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 100%;
+}
+footer .socials img {
+  width: 4rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+footer .socials #Github {
+  content: url(./assets/images/github.png);
+}
+
+footer .socials #Twitter {
+  content: url(./assets/images/twitter.png);
+}
