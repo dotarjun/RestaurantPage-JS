@@ -1,2 +1,26 @@
-(self.webpackChunkrestaurantpage_js=self.webpackChunkrestaurantpage_js||[]).push([[638],{242:()=>{!function(t){const e=document.createElement("h1");e.textContent="Ratatouille Restaurant",e.classList.add("img-text"),content.appendChild(e);const n=document.createElement("img");n.classList.add("top-img"),content.appendChild(n);const a=document.createElement("img");a.classList.add("scroll"),content.appendChild(a)}()}},t=>{t(t.s=242)}]);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaG9tZVRhYi5idW5kbGUuanMiLCJtYXBwaW5ncyI6Im1HQUFBLFNBQW1CQSxHQUNmLE1BQU1DLEVBQUtDLFNBQVNDLGNBQWMsTUFDbENGLEVBQUdHLFlBYUcseUJBWk5ILEVBQUdJLFVBQVVDLElBQUksWUFDakJDLFFBQVFDLFlBQVlQLEdBRXBCLE1BQU1RLEVBQVNQLFNBQVNDLGNBQWMsT0FDdENNLEVBQU9KLFVBQVVDLElBQUksV0FDckJDLFFBQVFDLFlBQVlDLEdBRXBCLE1BQU1DLEVBQVNSLFNBQVNDLGNBQWMsT0FDdENPLEVBQU9MLFVBQVVDLElBQUksVUFDckJDLFFBQVFDLFlBQVlFLEVBQ3hCLENBRUFDLEUiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yZXN0YXVyYW50cGFnZS1qcy8uL3NyYy9ob21lVGFiLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImZ1bmN0aW9uIGFwcGVuZEltZyhtc2cpIHtcbiAgICBjb25zdCBoMSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2gxJyk7XG4gICAgaDEudGV4dENvbnRlbnQgPSBtc2c7XG4gICAgaDEuY2xhc3NMaXN0LmFkZCgnaW1nLXRleHQnKVxuICAgIGNvbnRlbnQuYXBwZW5kQ2hpbGQoaDEpO1xuXG4gICAgY29uc3QgdG9wSW1nID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnaW1nJyk7XG4gICAgdG9wSW1nLmNsYXNzTGlzdC5hZGQoJ3RvcC1pbWcnKTtcbiAgICBjb250ZW50LmFwcGVuZENoaWxkKHRvcEltZyk7XG5cbiAgICBjb25zdCBzY3JvbGwgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdpbWcnKTtcbiAgICBzY3JvbGwuY2xhc3NMaXN0LmFkZCgnc2Nyb2xsJylcbiAgICBjb250ZW50LmFwcGVuZENoaWxkKHNjcm9sbClcbn1cblxuYXBwZW5kSW1nKCdSYXRhdG91aWxsZSBSZXN0YXVyYW50JykiXSwibmFtZXMiOlsibXNnIiwiaDEiLCJkb2N1bWVudCIsImNyZWF0ZUVsZW1lbnQiLCJ0ZXh0Q29udGVudCIsImNsYXNzTGlzdCIsImFkZCIsImNvbnRlbnQiLCJhcHBlbmRDaGlsZCIsInRvcEltZyIsInNjcm9sbCIsImFwcGVuZEltZyJdLCJzb3VyY2VSb290IjoiIn0=
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(self["webpackChunkrestaurantpage_js"] = self["webpackChunkrestaurantpage_js"] || []).push([["homeTab"],{
+
+/***/ "./src/homeTab.js":
+/*!************************!*\
+  !*** ./src/homeTab.js ***!
+  \************************/
+/***/ (() => {
+
+eval("function appendImg(msg) {\n    const h1 = document.createElement('h1');\n    h1.textContent = msg;\n    h1.classList.add('img-text')\n    content.appendChild(h1);\n\n    const topImg = document.createElement('img');\n    topImg.classList.add('top-img');\n    content.appendChild(topImg);\n\n    const scroll = document.createElement('img');\n    scroll.classList.add('scroll')\n    content.appendChild(scroll)\n}\n\nappendImg('Ratatouille Restaurant')\n\n//# sourceURL=webpack://restaurantpage-js/./src/homeTab.js?");
+
+/***/ })
+
+},
+/******/ __webpack_require__ => { // webpackRuntimeModules
+/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+/******/ var __webpack_exports__ = (__webpack_exec__("./src/homeTab.js"));
+/******/ }
+]);
