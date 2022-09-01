@@ -54,7 +54,7 @@ body {
   margin: 0;
 }
 
-.home-content {
+main {
   font-family: sans-serif;
   margin-inline: 20vw;
 }
@@ -117,7 +117,7 @@ nav ul li a {
   box-shadow: var(--gunmetal) 0px 1px 1px;
 }
 
-.home-content button {
+main button {
   position: relative;
   left: 50%;
   margin-top: 2rem;
