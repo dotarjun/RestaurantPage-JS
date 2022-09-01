@@ -1,13 +1,14 @@
 :root {
   /* CSS HEX */
   --bistre: rgba(53, 35, 7, 0.63);
-  --raw-sienna: #d98851ff;
+  --raw-sienna: rgb(243, 189, 152);
   --baby-blue-eyes: #9dbcffff;
   --wild-blue-yonder: #95add6ff;
   --cadet-grey: #8c9eadff;
   --light-cadet-grey: #c8dff3;
   --gunmetal: #152531ff;
-  --gold: #ffb76d;
+  /* --gold: #ffaf24; */
+  --gold: rgb(255, 197, 91);
 }
 
 @font-face {
@@ -114,16 +115,18 @@ nav ul li a {
   border: 0.15rem solid var(--gunmetal);
   cursor: pointer;
   font-family: "blackchancery";
-  box-shadow: var(--gunmetal) 0px 1px 1px;
+  box-shadow: var(--gunmetal) 0px 0px 1px;
 }
 
-main button {
+main .book-btn {
   position: relative;
   left: 50%;
   margin-top: 2rem;
-  padding: 2rem;
+  padding-inline: 5rem;
   padding-block: 1rem;
   transform: translateX(-50%);
+  font-size: 1.5rem;
+  /* font-weight: 900; */
 }
 
 footer {

@@ -12,6 +12,7 @@ function createNavLink(txt, lnk) {
     navLinks.appendChild(li)
 }
 
+createNavLink('Home', '')
 createNavLink('Menu', 'menu')
 createNavLink('About Us', 'about-us')
 createNavLink('Contact', 'contact')
