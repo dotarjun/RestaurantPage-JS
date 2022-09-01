@@ -15,7 +15,7 @@ function createNavLink(txt, lnk) {
 createNavLink('Home', '')
 createNavLink('Menu', 'menu')
 createNavLink('About Us', 'about-us')
-createNavLink('Contact', 'contact')
+// createNavLink('Contact', 'contact')
 bookButton(navLinks)
 navbar.appendChild(navLinks)
 content.appendChild(navbar)

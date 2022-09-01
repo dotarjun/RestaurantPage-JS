@@ -5,9 +5,9 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
+        navbar: './src/navbar.js',
         coverImage: './src/cover-image.js',
         button: './src/button.js',
-        navbar: './src/navbar.js',
         homeMain: './src/home-main.js',
     },
     // devtool: 'inline-source-map',
