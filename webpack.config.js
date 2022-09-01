@@ -17,7 +17,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Ratatouille',
-            favicon: './src/favicon.ico'
+            favicon: './src/assets/images/favicon.ico'
         }),
     ],
     module: {
