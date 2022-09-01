@@ -12,9 +12,9 @@
 
 @font-face {
   font-family: "BlackChancery";
-  src: url(./blackchancery.ttf);
+  src: url(./assets/fonts/blackchancery.ttf);
   font-family: "StruckBase";
-  src: url(./StruckBase.otf);
+  src: url(./assets/fonts/StruckBase.otf);
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 }
 
 .top-img {
-  content: url(./eiffel-tower-view.jpg);
+  content: url(./assets/images/eiffel-tower-view.jpg);
   height: 90vh;
   width: 95vw;
   /* margin-block: 5vh; */
@@ -111,9 +111,23 @@ nav ul li a {
   background-color: var(--gold);
   /* color: white; */
   border-radius: 0.25rem;
-  /* border: 0.2rem solid var(--gunmetal); */
+  border: 0.15rem solid var(--gunmetal);
   cursor: pointer;
   font-family: "blackchancery";
-  box-shadow: var(--gunmetal) 0px 1px 4px;
+  box-shadow: var(--gunmetal) 0px 1px 1px;
 }
- 
+
+.home-content button {
+  position: relative;
+  left: 50%;
+  margin-top: 2rem;
+  padding: 2rem;
+  padding-block: 1rem;
+  transform: translateX(-50%);
+}
+
+footer {
+  height: 20vh;
+  background-color: var(--gunmetal);
+  margin-top: 5rem;
+}
