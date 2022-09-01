@@ -5,10 +5,10 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        homeTab: './src/homeTab.js',
+        coverImage: './src/cover-image.js',
         button: './src/button.js',
         navbar: './src/navbar.js',
-        paragraph: './src/paragraph.js',
+        homeMain: './src/home-main.js',
     },
     // devtool: 'inline-source-map',
     devServer: {
