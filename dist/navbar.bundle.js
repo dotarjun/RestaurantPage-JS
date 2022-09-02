@@ -1,12 +1,4 @@
 "use strict";
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (self["webpackChunkrestaurantpage_js"] = self["webpackChunkrestaurantpage_js"] || []).push([["navbar"],{
 
 /***/ "./src/button.js":
@@ -15,7 +7,20 @@
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ bookButton)\n/* harmony export */ });\nfunction bookButton(parent) {\n    const btn = document.createElement('button');\n    btn.classList.add('book-btn');\n    btn.textContent = 'Book a Table'\n    btn.setAttribute(\"onclick\", \"location.href='/book'\")\n    parent.appendChild(btn)\n}\n\n\n\n\n//# sourceURL=webpack://restaurantpage-js/./src/button.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ bookButton)
+/* harmony export */ });
+function bookButton(parent) {
+    const btn = document.createElement('button');
+    btn.classList.add('book-btn');
+    btn.textContent = 'Book a Table'
+    // btn.setAttribute("onclick", "location.href='/book'")
+    parent.appendChild(btn)
+}
+
+
+
 
 /***/ }),
 
@@ -25,7 +30,32 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button.js */ \"./src/button.js\");\n\n\nconst navbar = document.createElement('nav')\nconst navLinks = document.createElement('ul')\n\nfunction createNavLink(txt, lnk) {\n    const li = document.createElement('li')\n    const link = document.createElement('a')\n    link.textContent = txt\n    link.setAttribute('href', `${lnk}`)\n    li.appendChild(link)\n    navLinks.appendChild(li)\n}\n\ncreateNavLink('Menu', 'menu')\ncreateNavLink('About Us', 'about-us')\ncreateNavLink('Contact', 'contact')\n;(0,_button_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(navLinks)\nnavbar.appendChild(navLinks)\ncontent.appendChild(navbar)\n\n//# sourceURL=webpack://restaurantpage-js/./src/navbar.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button.js */ "./src/button.js");
+
+
+const navbar = document.createElement('nav')
+const navLinks = document.createElement('ul')
+
+function createNavLink(txt, id) {
+    const li = document.createElement('li')
+    const btn = document.createElement('button')
+    btn.textContent = txt
+    // link.setAttribute('href', `${lnk}`)
+    btn.setAttribute('id', `${id}`)
+    li.appendChild(btn)
+    navLinks.appendChild(li)
+}
+
+createNavLink('Home', 'home')
+createNavLink('Menu', 'menu')
+createNavLink('About Us', 'about-us')
+;(0,_button_js__WEBPACK_IMPORTED_MODULE_0__["default"])(navLinks)
+navbar.appendChild(navLinks)
+homeContent.appendChild(navbar)
+
+
+
 
 /***/ })
 
@@ -35,3 +65,4 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _but
 /******/ var __webpack_exports__ = (__webpack_exec__("./src/navbar.js"));
 /******/ }
 ]);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmF2YmFyLmJ1bmRsZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7O0FBQWU7QUFDZjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Ozs7Ozs7Ozs7Ozs7OztBQ05xQzs7QUFFckM7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLG9DQUFvQyxJQUFJO0FBQ3hDLDhCQUE4QixHQUFHO0FBQ2pDO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQSx1REFBVTtBQUNWO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yZXN0YXVyYW50cGFnZS1qcy8uL3NyYy9idXR0b24uanMiLCJ3ZWJwYWNrOi8vcmVzdGF1cmFudHBhZ2UtanMvLi9zcmMvbmF2YmFyLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIGJvb2tCdXR0b24ocGFyZW50KSB7XG4gICAgY29uc3QgYnRuID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnYnV0dG9uJyk7XG4gICAgYnRuLmNsYXNzTGlzdC5hZGQoJ2Jvb2stYnRuJyk7XG4gICAgYnRuLnRleHRDb250ZW50ID0gJ0Jvb2sgYSBUYWJsZSdcbiAgICAvLyBidG4uc2V0QXR0cmlidXRlKFwib25jbGlja1wiLCBcImxvY2F0aW9uLmhyZWY9Jy9ib29rJ1wiKVxuICAgIHBhcmVudC5hcHBlbmRDaGlsZChidG4pXG59XG5cblxuIiwiaW1wb3J0IGJvb2tCdXR0b24gZnJvbSBcIi4vYnV0dG9uLmpzXCI7XG5cbmNvbnN0IG5hdmJhciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ25hdicpXG5jb25zdCBuYXZMaW5rcyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3VsJylcblxuZnVuY3Rpb24gY3JlYXRlTmF2TGluayh0eHQsIGlkKSB7XG4gICAgY29uc3QgbGkgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdsaScpXG4gICAgY29uc3QgYnRuID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnYnV0dG9uJylcbiAgICBidG4udGV4dENvbnRlbnQgPSB0eHRcbiAgICAvLyBsaW5rLnNldEF0dHJpYnV0ZSgnaHJlZicsIGAke2xua31gKVxuICAgIGJ0bi5zZXRBdHRyaWJ1dGUoJ2lkJywgYCR7aWR9YClcbiAgICBsaS5hcHBlbmRDaGlsZChidG4pXG4gICAgbmF2TGlua3MuYXBwZW5kQ2hpbGQobGkpXG59XG5cbmNyZWF0ZU5hdkxpbmsoJ0hvbWUnLCAnaG9tZScpXG5jcmVhdGVOYXZMaW5rKCdNZW51JywgJ21lbnUnKVxuY3JlYXRlTmF2TGluaygnQWJvdXQgVXMnLCAnYWJvdXQtdXMnKVxuYm9va0J1dHRvbihuYXZMaW5rcylcbm5hdmJhci5hcHBlbmRDaGlsZChuYXZMaW5rcylcbmhvbWVDb250ZW50LmFwcGVuZENoaWxkKG5hdmJhcilcblxuXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=

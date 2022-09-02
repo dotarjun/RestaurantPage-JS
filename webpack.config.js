@@ -6,11 +6,11 @@ module.exports = {
     entry: {
         index: './src/index.js',
         navbar: './src/navbar.js',
-        coverImage: './src/cover-image.js',
+        tabLogic: './src/tab-logic.js',
         button: './src/button.js',
         homeMain: './src/home-main.js',
     },
-    // devtool: 'inline-source-map',
+    devtool: 'inline-source-map',
     devServer: {
         static: './dist',
     },
