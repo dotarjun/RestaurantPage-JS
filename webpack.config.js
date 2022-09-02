@@ -9,6 +9,7 @@ module.exports = {
         coverImage: './src/cover-image.js',
         button: './src/button.js',
         homeMain: './src/home-main.js',
+        tabLogic: './src/tab-logic.js',
     },
     devtool: 'inline-source-map',
     devServer: {
