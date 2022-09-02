@@ -10,7 +10,7 @@ module.exports = {
         button: './src/button.js',
         homeMain: './src/home-main.js',
     },
-    // devtool: 'inline-source-map',
+    devtool: 'inline-source-map',
     devServer: {
         static: './dist',
     },
