@@ -1,12 +1,4 @@
 "use strict";
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (self["webpackChunkrestaurantpage_js"] = self["webpackChunkrestaurantpage_js"] || []).push([["button"],{
 
 /***/ "./src/button.js":
@@ -15,7 +7,20 @@
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ bookButton)\n/* harmony export */ });\nfunction bookButton(parent) {\n    const btn = document.createElement('button');\n    btn.classList.add('book-btn');\n    btn.textContent = 'Book a Table'\n    btn.setAttribute(\"onclick\", \"location.href='/book'\")\n    parent.appendChild(btn)\n}\n\n\n\n\n//# sourceURL=webpack://restaurantpage-js/./src/button.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ bookButton)
+/* harmony export */ });
+function bookButton(parent) {
+    const btn = document.createElement('button');
+    btn.classList.add('book-btn');
+    btn.textContent = 'Book a Table'
+    // btn.setAttribute("onclick", "location.href='/book'")
+    parent.appendChild(btn)
+}
+
+
+
 
 /***/ })
 
@@ -25,3 +30,4 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ var __webpack_exports__ = (__webpack_exec__("./src/button.js"));
 /******/ }
 ]);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnV0dG9uLmJ1bmRsZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7O0FBQWU7QUFDZjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yZXN0YXVyYW50cGFnZS1qcy8uL3NyYy9idXR0b24uanMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gYm9va0J1dHRvbihwYXJlbnQpIHtcbiAgICBjb25zdCBidG4gPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdidXR0b24nKTtcbiAgICBidG4uY2xhc3NMaXN0LmFkZCgnYm9vay1idG4nKTtcbiAgICBidG4udGV4dENvbnRlbnQgPSAnQm9vayBhIFRhYmxlJ1xuICAgIC8vIGJ0bi5zZXRBdHRyaWJ1dGUoXCJvbmNsaWNrXCIsIFwibG9jYXRpb24uaHJlZj0nL2Jvb2snXCIpXG4gICAgcGFyZW50LmFwcGVuZENoaWxkKGJ0bilcbn1cblxuXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
