@@ -1,9 +1,10 @@
 import './style.css';
+
 const siteContent = document.createElement('div')
 siteContent.setAttribute('id', 'site-content')
 
-const content = document.createElement('div')
-content.setAttribute('id', 'content')
+const homeContent = document.createElement('div')
+homeContent.setAttribute('id', 'home-content')
 
 const menuContent = document.createElement('div')
 menuContent.setAttribute('id', 'menu-content')
@@ -12,7 +13,7 @@ const aboutUsContent = document.createElement('div')
 aboutUsContent.setAttribute('id', 'about-us-content')
 
 
-siteContent.appendChild(content)
+siteContent.appendChild(homeContent)
 document.body.appendChild(siteContent);
 
 

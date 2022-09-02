@@ -1,4 +1,5 @@
 import bookButton from "./button.js";
+const homeContent = document.getElementById('home-content')
 
 const navbar = document.createElement('nav')
 const navLinks = document.createElement('ul')
@@ -18,6 +19,6 @@ createNavLink('Menu', 'menu')
 createNavLink('About Us', 'about-us')
 bookButton(navLinks)
 navbar.appendChild(navLinks)
-content.appendChild(navbar)
+homeContent.appendChild(navbar)
 
 
