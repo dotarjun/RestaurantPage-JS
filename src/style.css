@@ -100,11 +100,16 @@ nav ul {
   font-size: 1.2rem;
 }
 
-nav ul li a {
+nav ul li button {
   text-decoration: none;
   font-family: "blackchancery";
   color: black;
   font-weight: 600;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .book-btn {

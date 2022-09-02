@@ -5,17 +5,17 @@ const navLinks = document.createElement('ul')
 
 function createNavLink(txt, lnk) {
     const li = document.createElement('li')
-    const link = document.createElement('a')
-    link.textContent = txt
-    link.setAttribute('href', `${lnk}`)
-    li.appendChild(link)
+    const btn = document.createElement('button')
+    btn.textContent = txt
+    // link.setAttribute('href', `${lnk}`)
+    btn.setAttribute('id', `${lnk}`)
+    li.appendChild(btn)
     navLinks.appendChild(li)
 }
 
-createNavLink('Home', '')
-createNavLink('Menu', 'menu')
+createNavLink('Home', 'home')
+createNavLink('Menu', '')
 createNavLink('About Us', 'about-us')
-// createNavLink('Contact', 'contact')
 bookButton(navLinks)
 navbar.appendChild(navLinks)
 content.appendChild(navbar)
