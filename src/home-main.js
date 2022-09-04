@@ -1,19 +1,19 @@
 import bookButton from "./button.js";
 
 const homeContent = document.getElementById('home-content')
-const homeMainContent = document.createElement('main');
+const mainContent = document.querySelector('main');
 
 function homeText(text) {
     const para = document.createElement('p');
     para.textContent = text;
-    homeMainContent.appendChild(para)
+    mainContent.appendChild(para)
 }
 
 function highlightText(text) {
     const highlightLine = document.createElement('p')
     highlightLine.classList.add('highlight-line');
     highlightLine.textContent = text;
-    homeMainContent.appendChild(highlightLine)
+    mainContent.appendChild(highlightLine)
 }
 
 function addDisclaimer(parent) {
@@ -41,11 +41,11 @@ export function addHomeContent() {
     homeText('Following Ego\'s review, we were ~ratted~ out. Thus Gustaeu\'s was shut down due to undisclosable reasons. But fear not, Gustaeu\'s spirit still lives on with our top of the notch chefs. With a highly diverse staff and an inclusonary kitchen open for individuals who love cooking, we have been rated Paris\'s best place to eat (and cook) at. At Ratatouille we embody Gustaeu\'s motto ')
     highlightText('Anybody can Cook')
     homeText('So what are you waiting for? Book a table at Ratatouille by clicking the button below.')
-    bookButton(homeMainContent) 
-    homeContent.appendChild(homeMainContent)
+    bookButton(mainContent)
     console.log('test');
+    homeContent.appendChild(mainContent)
 }
 
-addHomeContent()
+// addHomeContent()
 
 
