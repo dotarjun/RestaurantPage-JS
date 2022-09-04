@@ -1,7 +1,7 @@
 const siteContent = document.getElementById('site-content')
 const homeContent = document.getElementById('home-content')
-const mainContent = document.createElement('main');
-
+const mainContent = document.getElementsByTagName('main');
+console.log(mainContent)
 
 import { addNavbar } from "./navbar.js"
 addNavbar(homeContent)
@@ -24,7 +24,8 @@ function tabSwitch(btn) {
         currentChild.replaceChildren(emptyChild)
         if (currentButton == homeButton) {
             const homeMainContent = document.querySelector('main');
-            homeMainContent.innerHTML = 'BRUHHH'
+            // homeMainContent.innerHTML = 'BRUHHH'
+            removeChildren(currentChild)
             addNavbar(homeContent)
             addHomeContent();
             siteContent.appendChild(currentChild)
@@ -33,13 +34,17 @@ function tabSwitch(btn) {
 }
 
 function removeChildren(e) {
-    let child = e.lastElementChild;
-    while (child) {
+    let child = e.firstChild;
+    while (child.hasChildNodes) {
         e.removeChild(child);
         child = e.lastElementChild;
-
+        // You can take a look at removeChildNode, hasChildNodes, and firstChild
     }
 }
+
+
+
+
 
 tabSwitch(homeButton)
 tabSwitch(menuButton)
