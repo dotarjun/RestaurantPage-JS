@@ -8,7 +8,9 @@ module.exports = {
         navbar: './src/navbar.js',
         tabLogic: './src/tab-logic.js',
         button: './src/button.js',
-        homeMain: './src/home-main.js',
+        homeContent: './src/home-content.js',
+        menuContent: './src/menu-content.js',
+        aboutUsContent: './src/about-us-content.js',
     },
     devtool: 'inline-source-map',
     devServer: {
