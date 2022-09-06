@@ -7,8 +7,12 @@ const mainContent = document.getElementsByTagName('main');
 import { addNavbar } from "./navbar.js"
 addNavbar(homeContent)
 
-import { addHomeContent } from "./home-main.js"
+import { addHomeContent } from "./home-content.js"
 addHomeContent()
+import { addMenuContent } from "./menu-content.js"
+// addMenuContent()
+import { addAboutUsContent } from "./about-us-content.js"
+// addAboutUsContent()
 
 const homeButton = document.getElementById('home')
 const menuButton = document.getElementById('menu')
