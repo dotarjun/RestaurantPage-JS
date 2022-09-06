@@ -12,10 +12,8 @@ menuContent.setAttribute('id', 'menu-content')
 const aboutUsContent = document.createElement('div')
 aboutUsContent.setAttribute('id', 'about-us-content')
 
-const mainContent = document.createElement('main');
 
 
-homeContent.appendChild(mainContent)
 siteContent.appendChild(homeContent)
 siteContent.appendChild(menuContent)
 siteContent.appendChild(aboutUsContent)
