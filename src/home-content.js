@@ -1,7 +1,8 @@
 import bookButton from "./button.js";
+const mainContent = document.createElement('main');
 
 const homeContent = document.getElementById('home-content')
-const mainContent = document.querySelector('main');
+// const mainContent = document.querySelector('main');
 
 function homeText(text) {
     const para = document.createElement('p');
@@ -42,7 +43,6 @@ export function addHomeContent() {
     highlightText('Anybody can Cook')
     homeText('So what are you waiting for? Book a table at Ratatouille by clicking the button below.')
     bookButton(mainContent)
-    console.log('test');
     homeContent.appendChild(mainContent)
 }
 
