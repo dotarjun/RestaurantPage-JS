@@ -4,13 +4,11 @@ const menuContent = document.getElementById('menu-content')
 const aboutUsContent = document.getElementById('about-us-content')
 const mainContent = document.getElementsByTagName('main');
 
-import { addNavbar } from "./navbar.js"
-addNavbar(homeContent)
 
 import { addHomeContent } from "./home-content.js"
 addHomeContent()
 import { addMenuContent } from "./menu-content.js"
-// addMenuContent()
+addMenuContent()
 import { addAboutUsContent } from "./about-us-content.js"
 // addAboutUsContent()
 
@@ -27,45 +25,22 @@ function tabSwitch(btn) {
         const currentButton = btn
         if (currentButton == homeButton) {
             if (currentChild !== homeContent) {
-                addNavbar(homeContent)
                 addHomeContent();
                 siteContent.appendChild(currentChild)
+                currentChild = homeContent
             }
         }
         if (currentButton == menuButton) {
-            // siteContent.removeChild(currentChild)
             currentChild.style.display = 'none'
             currentChild = menuContent
             currentChild.style.display = 'initial'
             siteContent.appendChild(currentChild)
-            addNavbar(currentChild)
         }
     })
 }
-
-
-// function removeChildren(e) {
-//     let child = e.childNodes;
-//     console.log("🚀 ----------------------------------------------------------------🚀")
-//     console.log("🚀 ~ file: tab-logic.js ~ line 38 ~ removeChildren ~ child", child)
-//     console.log("🚀 ----------------------------------------------------------------🚀")
-//     if (child.length > 4) {
-//         for (let i = 1; i < 7; i++) {
-//             e.removeChild(child[i]);
-//         }
-//     }
-
-
-
-//     // You can take a look at removeChildNode, hasChildNodes, and firstChild
-// }
-
-
-
 
 
 
 tabSwitch(homeButton)
 tabSwitch(menuButton)
 tabSwitch(aboutUsButton)
-
