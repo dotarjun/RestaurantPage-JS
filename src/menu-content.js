@@ -1,4 +1,7 @@
 import bookButton from "./button.js";
+import ratatouille from "./assets/images/recipes/ratatouille.jpg";
+import soup from "./assets/images/recipes/special-soup.jpg";
+
 
 const menuContent = document.getElementById('menu-content')
 const mainContent = document.createElement('main');
@@ -10,7 +13,7 @@ const createCard = (obj) => {
     let cardContentWrap = document.createElement('div')
     cardContentWrap.classList.add('cardContentWrap')
     const foodImage = document.createElement('img')
-    foodImage.style.content = `url(${obj.url})`
+    foodImage.src = obj.url;
     cardContentWrap.appendChild(foodImage)
     const foodHeading = document.createElement('h3')
     foodHeading.textContent = obj.txt
@@ -21,7 +24,8 @@ const createCard = (obj) => {
     card.appendChild(cardContentWrap)
     mainContent.appendChild(card)
 }
-createCard({ url: '/src/assets/images/recipes/ratatouille.jpg', txt: 'Ratatouille', desc: 'BRUHHHHHHn lorem ipsum nfjdsnsijn ij dnqwij dij wqn i oiun yes bruh LOrem ipsum' })
+createCard({ url: ratatouille, txt: 'Ratatouille', desc: 'BRUHHHHHHn lorem ipsum nfjdsnsijn ij dnqwij dij wqn i oiun yes bruh LOrem ipsum' })
+createCard({ url: soup, txt: 'Special Soup', desc: 'BRUHHHHHHn lorem ipsum nfjdsnsijn ij dnqwij dij wqn i oiun yes bruh LOrem ipsum' })
 
 
 menuContent.appendChild(mainContent)
