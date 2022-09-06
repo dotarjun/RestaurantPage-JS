@@ -1,4 +1,5 @@
 import './style.css';
+import { addNavbar } from "./navbar.js"
 
 const siteContent = document.createElement('div')
 siteContent.setAttribute('id', 'site-content')
@@ -13,6 +14,7 @@ const aboutUsContent = document.createElement('div')
 aboutUsContent.setAttribute('id', 'about-us-content')
 
 
+addNavbar(siteContent)
 
 siteContent.appendChild(homeContent)
 siteContent.appendChild(menuContent)
