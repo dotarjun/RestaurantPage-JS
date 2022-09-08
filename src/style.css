@@ -1,27 +1,31 @@
 :root {
-  /* CSS HEX */
-  --bistre: rgba(53, 35, 7, 0.63);
-  --raw-sienna: rgb(243, 189, 152);
-  --baby-blue-eyes: #9dbcffff;
-  --wild-blue-yonder: #95add6ff;
-  --cadet-grey: #8c9eadff;
-  --light-cadet-grey: #c8dff3;
-  --gunmetal: #152531ff;
-  /* --gold: #ffaf24; */
-  --gold: rgb(255, 197, 91);
+  --red-60: #3c0008;
+  --red-orange: #521008;
+  --orange-30-dark: #5d1808;
+  --orange-30: #683510;
+  --orange-30-light: #e77e01;
+  --orange-30-ultra-light: #f8dfc1;
+  --yellow-10: #fdda16;
+  --yellow-10-light: #ffee82;
 }
 
+::selection {
+  background: var(--orange-30-light);
+  color: var(--red-60);
+}
 @font-face {
   font-family: "BlackChancery";
   src: url(./assets/fonts/blackchancery.ttf);
   font-family: "StruckBase";
   src: url(./assets/fonts/StruckBase.otf);
+  font-family: "Copperplate";
+  src: url(./assets/fonts/Copperplate.otf);
 }
 
 body {
-  font-family: "StruckBase";
   margin: 0;
-  /* background-color: var(--light-cadet-grey); */
+  background-color: var(--red-60);
+  color: var(--orange-30-light);
 }
 
 #site-content {
@@ -38,7 +42,7 @@ body {
   /* margin-inline: 2.5vw; */
   position: relative;
   z-index: -5;
-  border: 0.2rem solid var(--gunmetal);
+  border: 0.2rem solid var(--orange-30-light);
   border-radius: 2rem;
   object-fit: cover;
 }
@@ -57,19 +61,25 @@ body {
 
 main {
   font-family: sans-serif;
+}
+
+#home-content main {
   margin-inline: 20vw;
 }
 
 .highlight-line {
-  font-family: "StruckBase";
-  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Copperplate";
+  font-size: 2.5rem;
   text-transform: capitalize;
   padding: 1rem;
   margin-inline: auto;
-  width: 60%;
+  /* width: 60%; */
   text-align: center;
   border-radius: 0.5rem;
   margin-block: 0;
+  color: var(--orange-30-light);
+  font-style: italic;
 }
 
 nav {
@@ -85,6 +95,10 @@ nav {
 }
 nav ul {
   background-color: white;
+  /* border-inline: 5px solid var(--orange-30);
+  border-bottom: 5px solid var(--orange-30);
+  border-inline: 5px solid black;
+  border-bottom: 5px solid black; */
   border-radius: 0rem 0rem 1rem 1rem;
   width: 55vw;
   transform: translateX(-2.5vw);
@@ -96,12 +110,13 @@ nav ul {
   list-style: none;
   height: 8vh;
   font-size: 1.2rem;
+  background-color: var(--red-60);
 }
 
 nav ul li button {
   text-decoration: none;
   font-family: "blackchancery";
-  color: black;
+  color: var(--orange-30-light);
   font-weight: 600;
   background: none;
   outline: none;
@@ -121,13 +136,13 @@ nav ul li button {
 
   padding-inline: 1rem;
   padding-block: 0.25rem;
-  background-color: var(--gold);
-  /* color: white; */
+  background-color: var(--orange-30-light);
+  color: var(--orange-30-ultra-light);
   border-radius: 0.25rem;
-  border: 0.15rem solid var(--gunmetal);
+  /* border: 0.15rem solid var(--red-60); */
   cursor: pointer;
   font-family: "blackchancery";
-  box-shadow: var(--gunmetal) 0px 0px 1px;
+  /* box-shadow: var(--yellow-10) 0px 0px 1px; */
 }
 
 main .book-btn {
@@ -143,7 +158,7 @@ main .book-btn {
 
 footer {
   height: 20vh;
-  background-color: var(--gunmetal);
+  background-color: black;
   margin-top: 5rem;
 }
 
@@ -158,12 +173,47 @@ footer .socials img {
   width: 4rem;
   margin: 1rem;
   cursor: pointer;
+  filter: invert(47%) sepia(56%) saturate(1829%) hue-rotate(8deg)
+    brightness(99%) contrast(99%);
 }
 
 footer .socials #Github {
-  content: url(./assets/images/github.png);
+  content: url(./assets/images/github.svg);
 }
 
 footer .socials #Twitter {
-  content: url(./assets/images/twitter.png);
+  content: url(./assets/images/twitter.svg);
+}
+
+#menu-content main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 4rem;
+}
+
+.card {
+  background-color: var(--orange-30-dark);
+  /* margin-block: 3rem; */
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.card ::selection {
+  color: var(--orange-30-dark);
+}
+
+.cardContentWrap {
+  padding: 2rem;
+}
+
+.cardContentWrap img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.cardContentWrap h3 {
+  font-family: "Cooperplate";
+  font-size: 2rem;
 }
