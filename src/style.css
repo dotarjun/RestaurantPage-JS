@@ -1,14 +1,4 @@
 :root {
-  /* CSS HEX */
-  --bistre: rgba(53, 35, 7, 0.63);
-  --raw-sienna: rgb(243, 189, 152);
-  --baby-blue-eyes: #9dbcffff;
-  --wild-blue-yonder: #95add6ff;
-  --cadet-grey: #8c9eadff;
-  --light-cadet-grey: #c8dff3;
-  /* --gold: #ffaf24; */
-  /* --gold: rgb(255, 197, 91); */
-
   --red-60: #3c0008;
   --red-orange: #521008;
   --orange-30-dark: #5d1808;
@@ -183,14 +173,16 @@ footer .socials img {
   width: 4rem;
   margin: 1rem;
   cursor: pointer;
+  filter: invert(47%) sepia(56%) saturate(1829%) hue-rotate(8deg)
+    brightness(99%) contrast(99%);
 }
 
 footer .socials #Github {
-  content: url(./assets/images/github.png);
+  content: url(./assets/images/github.svg);
 }
 
 footer .socials #Twitter {
-  content: url(./assets/images/twitter.png);
+  content: url(./assets/images/twitter.svg);
 }
 
 #menu-content main {
