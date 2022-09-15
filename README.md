@@ -10,4 +10,5 @@ Restaurant project from The Odin Project
 - Bash
 
 ## Design Inspiration 
-Ratatouille movie. All copyrighted to Disney inc
+Ratatouille movie. All copyrighted to Disney inc.     
+
