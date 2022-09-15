@@ -22,25 +22,29 @@ let currentChild = homeContent
 
 function tabSwitch(btn) {
     btn.addEventListener('click', () => {
-        const currentButton = btn
-        if (currentButton == homeButton) {
-            if (currentChild !== homeContent) {
-                addHomeContent();
-                siteContent.appendChild(currentChild)
+
+        currentChild.style.display = 'none'
+
+        switch (btn) {
+            case homeButton:
                 currentChild = homeContent
-            }
+                break;
+            case menuButton:
+                currentChild = menuContent
+                break;
+            case aboutUsButton:
+                currentChild = aboutUsContent
+                break;
+            default:
+                homeButton
+                break;
         }
-        if (currentButton == menuButton) {
-            currentChild.style.display = 'none'
-            currentChild = menuContent
-            currentChild.style.display = 'initial'
-            siteContent.appendChild(currentChild)
-        }
+        currentChild.style.display = 'initial'
     })
 }
 
 
 
-tabSwitch(homeButton)
 tabSwitch(menuButton)
+tabSwitch(homeButton)
 tabSwitch(aboutUsButton)
