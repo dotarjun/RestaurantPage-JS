@@ -19,7 +19,7 @@ export function addNavbar(parentEle) {
 
     createNavLink('Home', 'home')
     createNavLink('Menu', 'menu')
-    createNavLink('About Us', 'about-us')
+    // createNavLink('About Us', 'about-us')
     bookButton(navLinks)
     navbar.appendChild(navLinks)
     parentEle.appendChild(navbar)

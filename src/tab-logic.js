@@ -47,4 +47,4 @@ function tabSwitch(btn) {
 
 tabSwitch(menuButton)
 tabSwitch(homeButton)
-tabSwitch(aboutUsButton)
+// tabSwitch(aboutUsButton)
