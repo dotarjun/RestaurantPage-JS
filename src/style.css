@@ -1,12 +1,10 @@
 :root {
   --red-60: #3c0008;
   --red-orange: #521008;
-  --orange-30-dark: #5d1808;
+  --orange-30-dark: #4d1509;
   --orange-30: #683510;
   --orange-30-light: #e77e01;
   --orange-30-ultra-light: #f8dfc1;
-  --yellow-10: #fdda16;
-  --yellow-10-light: #ffee82;
 }
 
 ::selection {
@@ -137,12 +135,13 @@ nav ul li button {
   padding-inline: 1rem;
   padding-block: 0.25rem;
   background-color: var(--orange-30-light);
-  color: var(--orange-30-ultra-light);
+  /* color: var(--orange-30-ultra-light); */
+  color: var(--red-60);
   border-radius: 0.25rem;
-  /* border: 0.15rem solid var(--red-60); */
   cursor: pointer;
   font-family: "blackchancery";
   /* box-shadow: var(--yellow-10) 0px 0px 1px; */
+  /* -webkit-text-stroke: 1px var(--red-60); */
 }
 
 main .book-btn {
